@@ -1,0 +1,13 @@
+<h1>{{> title}}</h1>
+
+{{> nav}}
+
+<p>{{readHelper title}}</p>
+<p>{{globalHelper title}}</p>
+
+{{#each persons}}   
+    {{! @key 로 할 경우 , index 나옴 }}
+    <p>name : {{name}} / age : {{age}}</p>
+    {{else}}
+    <p>persons Empty</p>
+{{/each}}
