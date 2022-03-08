@@ -1,0 +1,11 @@
+<h1>{{> title}}</h1>
+
+{{> nav}}
+<p>{{globalHelper title}}</p>
+{{{person}}}
+
+{{#if isAllowPerson}}
+<a href="#">AllowPerson</a>
+{{else}}
+<a href="#">NotAllowPerson</a>
+{{/if}}
